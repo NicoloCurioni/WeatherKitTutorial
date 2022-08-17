@@ -14,6 +14,7 @@
 		A12CBFB828AD145800C2943E /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12CBFB728AD145800C2943E /* UserLocation.swift */; };
 		A12CBFBA28AD15BA00C2943E /* UserLocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12CBFB928AD15BA00C2943E /* UserLocationData.swift */; };
 		A12CBFBD28AD18A500C2943E /* UserLocations.json in Resources */ = {isa = PBXBuildFile; fileRef = A12CBFBC28AD18A500C2943E /* UserLocations.json */; };
+		A12CBFBF28AD520700C2943E /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12CBFBE28AD520700C2943E /* WeatherData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A12CBFB728AD145800C2943E /* UserLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
 		A12CBFB928AD15BA00C2943E /* UserLocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationData.swift; sourceTree = "<group>"; };
 		A12CBFBC28AD18A500C2943E /* UserLocations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserLocations.json; sourceTree = "<group>"; };
+		A12CBFBE28AD520700C2943E /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				A12CBFB728AD145800C2943E /* UserLocation.swift */,
 				A12CBFB928AD15BA00C2943E /* UserLocationData.swift */,
+				A12CBFBE28AD520700C2943E /* WeatherData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A12CBFB828AD145800C2943E /* UserLocation.swift in Sources */,
+				A12CBFBF28AD520700C2943E /* WeatherData.swift in Sources */,
 				A12CBFAA28AD108600C2943E /* ContentView.swift in Sources */,
 				A12CBFA828AD108600C2943E /* WeatherKitTutorialApp.swift in Sources */,
 				A12CBFBA28AD15BA00C2943E /* UserLocationData.swift in Sources */,
