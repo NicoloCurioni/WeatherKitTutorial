@@ -15,6 +15,8 @@
 		A12CBFBA28AD15BA00C2943E /* UserLocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12CBFB928AD15BA00C2943E /* UserLocationData.swift */; };
 		A12CBFBD28AD18A500C2943E /* UserLocations.json in Resources */ = {isa = PBXBuildFile; fileRef = A12CBFBC28AD18A500C2943E /* UserLocations.json */; };
 		A12CBFBF28AD520700C2943E /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12CBFBE28AD520700C2943E /* WeatherData.swift */; };
+		A12CBFC228AD588500C2943E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12CBFC128AD588500C2943E /* LocationManager.swift */; };
+		A13E86D528B67F4500DE0450 /* CLLocationManagerDelegate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E86D428B67F4500DE0450 /* CLLocationManagerDelegate+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		A12CBFB928AD15BA00C2943E /* UserLocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationData.swift; sourceTree = "<group>"; };
 		A12CBFBC28AD18A500C2943E /* UserLocations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserLocations.json; sourceTree = "<group>"; };
 		A12CBFBE28AD520700C2943E /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		A12CBFC128AD588500C2943E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		A13E86D428B67F4500DE0450 /* CLLocationManagerDelegate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManagerDelegate+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 			children = (
 				A12CBFB528AD137300C2943E /* WeatherKitTutorial.entitlements */,
 				A12CBFA728AD108600C2943E /* WeatherKitTutorialApp.swift */,
+				A13E86D328B67F3000DE0450 /* Utilities */,
+				A12CBFC028AD587C00C2943E /* Managers */,
 				A12CBFBB28AD189800C2943E /* Resources */,
 				A12CBFB628AD142700C2943E /* Model */,
 				A12CBFA928AD108600C2943E /* ContentView.swift */,
@@ -95,6 +101,30 @@
 				A12CBFBC28AD18A500C2943E /* UserLocations.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A12CBFC028AD587C00C2943E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A12CBFC128AD588500C2943E /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A13E86D228B67F2A00DE0450 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A13E86D428B67F4500DE0450 /* CLLocationManagerDelegate+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A13E86D328B67F3000DE0450 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A13E86D228B67F2A00DE0450 /* Extensions */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +199,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A12CBFB828AD145800C2943E /* UserLocation.swift in Sources */,
+				A13E86D528B67F4500DE0450 /* CLLocationManagerDelegate+Extensions.swift in Sources */,
 				A12CBFBF28AD520700C2943E /* WeatherData.swift in Sources */,
+				A12CBFC228AD588500C2943E /* LocationManager.swift in Sources */,
 				A12CBFAA28AD108600C2943E /* ContentView.swift in Sources */,
 				A12CBFA828AD108600C2943E /* WeatherKitTutorialApp.swift in Sources */,
 				A12CBFBA28AD15BA00C2943E /* UserLocationData.swift in Sources */,
@@ -305,6 +337,8 @@
 				DEVELOPMENT_TEAM = 59XYW74885;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "WeatherKitTutorial required Location in order to get weather data";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "WeatherKitTutorial required Location in order to get weather data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -315,7 +349,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nicolocurioni.WeatherKitTutorial;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicolocurioni.-com.nicolocurioni.WeatherKitTutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -335,6 +369,8 @@
 				DEVELOPMENT_TEAM = 59XYW74885;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "WeatherKitTutorial required Location in order to get weather data";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "WeatherKitTutorial required Location in order to get weather data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -345,7 +381,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nicolocurioni.WeatherKitTutorial;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicolocurioni.-com.nicolocurioni.WeatherKitTutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
