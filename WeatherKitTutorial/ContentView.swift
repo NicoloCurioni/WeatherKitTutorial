@@ -17,12 +17,41 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("New York temperature")
+                .font(.title)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            
+            Chart(fetcher.dailyTemperatures) { daily in
+                BarMark(
+                    x: .value("Day", daily.day),
+                    yStart: .value("High Temperature", daily.max),
+                    yEnd: .value("Low Temperature", daily.min)
+                )
+                .foregroundStyle(.gray)
+                .lineStyle(StrokeStyle(lineWidth: 5))
+                
+                PointMark(
+                    x: .value("Day", daily.day, unit: .day),
+                    y: .value("Low Temperature", daily.min)
+                )
+                .foregroundStyle(by: .value("Low", daily.min))
+                
+                PointMark(
+                    x: .value("Day", daily.day, unit: .day),
+                    y: .value("High Temperature", daily.min)
+                )
+                .foregroundStyle(by: .value("High", daily.max))
+            }
+            .chartYScale(domain: fetcher.dailyTemperatures.temperatureRange()
+            )
+            .chartYAxis {
+                AxisMarks(position: .leading)
+            }
         }
-        .padding()
+        .padding(.all, 16)
+        .task {
+            await fetcher.fetchDaily()
+        }
     }
 }
 
