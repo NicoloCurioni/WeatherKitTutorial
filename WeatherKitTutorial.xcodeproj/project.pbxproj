@@ -11,6 +11,7 @@
 		A12CBFAA28AD108600C2943E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12CBFA928AD108600C2943E /* ContentView.swift */; };
 		A12CBFAC28AD108700C2943E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A12CBFAB28AD108700C2943E /* Assets.xcassets */; };
 		A12CBFAF28AD108700C2943E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A12CBFAE28AD108700C2943E /* Preview Assets.xcassets */; };
+		A1DBD87228EB6D4D006FA44E /* DailyTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DBD87128EB6D4D006FA44E /* DailyTemperature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		A12CBFAB28AD108700C2943E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A12CBFAE28AD108700C2943E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A12CBFB528AD137300C2943E /* WeatherKitTutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeatherKitTutorial.entitlements; sourceTree = "<group>"; };
+		A1DBD87128EB6D4D006FA44E /* DailyTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTemperature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				A12CBFB528AD137300C2943E /* WeatherKitTutorial.entitlements */,
 				A12CBFA728AD108600C2943E /* WeatherKitTutorialApp.swift */,
 				A12CBFA928AD108600C2943E /* ContentView.swift */,
+				A1DBD87128EB6D4D006FA44E /* DailyTemperature.swift */,
 				A12CBFAB28AD108700C2943E /* Assets.xcassets */,
 				A12CBFAD28AD108700C2943E /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1DBD87228EB6D4D006FA44E /* DailyTemperature.swift in Sources */,
 				A12CBFAA28AD108600C2943E /* ContentView.swift in Sources */,
 				A12CBFA828AD108600C2943E /* WeatherKitTutorialApp.swift in Sources */,
 			);
