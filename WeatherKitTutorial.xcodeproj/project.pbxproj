@@ -13,6 +13,7 @@
 		A12CBFAF28AD108700C2943E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A12CBFAE28AD108700C2943E /* Preview Assets.xcassets */; };
 		A1DBD87228EB6D4D006FA44E /* DailyTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DBD87128EB6D4D006FA44E /* DailyTemperature.swift */; };
 		A1DBD87428EB6E4D006FA44E /* WeatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DBD87328EB6E4D006FA44E /* WeatherFetcher.swift */; };
+		A1DBD87728EB70DF006FA44E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DBD87628EB70DF006FA44E /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A12CBFB528AD137300C2943E /* WeatherKitTutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeatherKitTutorial.entitlements; sourceTree = "<group>"; };
 		A1DBD87128EB6D4D006FA44E /* DailyTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTemperature.swift; sourceTree = "<group>"; };
 		A1DBD87328EB6E4D006FA44E /* WeatherFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFetcher.swift; sourceTree = "<group>"; };
+		A1DBD87628EB70DF006FA44E /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				A12CBFB528AD137300C2943E /* WeatherKitTutorial.entitlements */,
 				A12CBFA728AD108600C2943E /* WeatherKitTutorialApp.swift */,
 				A12CBFA928AD108600C2943E /* ContentView.swift */,
+				A1DBD87528EB70C3006FA44E /* Extensions */,
 				A1DBD87128EB6D4D006FA44E /* DailyTemperature.swift */,
 				A1DBD87328EB6E4D006FA44E /* WeatherFetcher.swift */,
 				A12CBFAB28AD108700C2943E /* Assets.xcassets */,
@@ -73,6 +76,14 @@
 				A12CBFAE28AD108700C2943E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A1DBD87528EB70C3006FA44E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A1DBD87628EB70DF006FA44E /* Date+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1DBD87728EB70DF006FA44E /* Date+Extension.swift in Sources */,
 				A1DBD87428EB6E4D006FA44E /* WeatherFetcher.swift in Sources */,
 				A1DBD87228EB6D4D006FA44E /* DailyTemperature.swift in Sources */,
 				A12CBFAA28AD108600C2943E /* ContentView.swift in Sources */,
